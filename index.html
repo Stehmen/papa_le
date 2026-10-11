@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papa Le — Artisan Pâtisserie · New York</title>
+  <meta name="description" content="Papa Le — French-style artisan pâtisserie in New York. Croissants at dawn, cakes to order, desserts worth crossing the city for." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Papa Le</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#order" class="btn btn-small nav-cta">Order a cake</a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Artisan Pâtisserie · New York</p>
+      <h1>Butter, patience<br />and the smell of <em>morning</em></h1>
+      <p class="hero-sub">A French-style pâtisserie by pastry chef Aleksei Solovev — croissants at dawn, cakes to order, and desserts worth crossing the city for.</p>
+      <div class="hero-actions">
+        <a href="#order" class="btn">Order a cake</a>
+        <a href="#menu" class="btn btn-ghost">View menu</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="assets/pastry-hands.jpg" alt="Pastry chef piping éclairs" loading="lazy" />
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">The pâtissier</p>
+        <h2>Trained as a pastry chef,<br />built for the <em>morning</em> shift</h2>
+        <p>Aleksei Solovev graduated in cooking and confectionery, then spent fifteen years in professional kitchens — from sous-chef to head chef — building menus, training brigades, and obsessing over the last gram of sugar.</p>
+        <p>Papa Le is his pâtisserie: a small sunlit room where the croissants get twenty-seven layers, the honey cake follows his grandmother's recipe, and the first bake leaves the oven at five in the morning.</p>
+        <ul class="about-facts">
+          <li><strong>15</strong><span>years of craft</span></li>
+          <li><strong>27</strong><span>layers in every croissant</span></li>
+          <li><strong>5 AM</strong><span>first bake, daily</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The menu</p>
+        <h2>What came out<br />of the oven today</h2>
+      </div>
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-tab="viennoiserie" role="tab">Viennoiserie</button>
+        <button class="tab" data-tab="cakes" role="tab">Cakes</button>
+        <button class="tab" data-tab="desserts" role="tab">Desserts</button>
+      </div>
+
+      <div class="tab-panel active reveal" id="tab-viennoiserie">
+        <div class="dish"><div><h3>Butter croissant</h3><p>twenty-seven layers, French butter, baked at dawn</p></div><span>$4.50</span></div>
+        <div class="dish"><div><h3>Pain au chocolat</h3><p>Valrhona dark chocolate, flaky crumb</p></div><span>$5.00</span></div>
+        <div class="dish"><div><h3>Almond croissant</h3><p>twice-baked, frangipane, toasted almonds</p></div><span>$5.50</span></div>
+        <div class="dish"><div><h3>Cinnamon morning bun</h3><p>brioche, Ceylon cinnamon, brown-butter glaze</p></div><span>$4.50</span></div>
+      </div>
+
+      <div class="tab-panel reveal" id="tab-cakes">
+        <div class="dish"><div><h3>Pistachio &amp; rose cake</h3><p>Sicilian pistachio, rosewater cream, dried petals</p></div><span>$64</span></div>
+        <div class="dish"><div><h3>Honey cake “Medovik”</h3><p>burnt honey, sour cream mousse — grandmother's recipe</p></div><span>$52</span></div>
+        <div class="dish"><div><h3>Chocolate-raspberry torte</h3><p>70% dark chocolate, fresh raspberries, cocoa nib</p></div><span>$58</span></div>
+        <div class="dish"><div><h3>Lemon meringue tart</h3><p>Meyer lemon curd, torched Italian meringue</p></div><span>$46</span></div>
+      </div>
+
+      <div class="tab-panel reveal" id="tab-desserts">
+        <div class="dish"><div><h3>Vanilla éclair</h3><p>Tahitian vanilla bean crème pâtissière</p></div><span>$6.00</span></div>
+        <div class="dish"><div><h3>Macarons, box of six</h3><p>pistachio, salted caramel, raspberry, vanilla, coffee, lemon</p></div><span>$16.00</span></div>
+        <div class="dish"><div><h3>Tiramisu cup</h3><p>espresso-soaked savoiardi, mascarpone cloud</p></div><span>$8.00</span></div>
+        <div class="dish"><div><h3>Pavlova, seasonal fruit</h3><p>crisp meringue, chantilly, market fruit</p></div><span>$9.00</span></div>
+      </div>
+
+      <p class="menu-note reveal">Custom celebration cakes from $60 — tell us the occasion, we bake the rest.</p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The room</p>
+        <h2>A morning<br />at Papa Le</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="reveal"><img src="assets/interior.jpg" alt="Pâtisserie interior" loading="lazy" /><figcaption>The pâtisserie</figcaption></figure>
+        <figure class="reveal"><img src="assets/hero.jpg" alt="Morning bake" loading="lazy" /><figcaption>The morning bake</figcaption></figure>
+        <figure class="reveal"><img src="assets/pastry-hands.jpg" alt="Pastry chef at work" loading="lazy" /><figcaption>From the pastry bench</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER ============ -->
+  <section class="section order" id="order">
+    <div class="container order-grid">
+      <div class="order-text reveal">
+        <p class="eyebrow">Custom orders</p>
+        <h2>Your cake,<br />baked to order</h2>
+        <p>Weddings, birthdays, Tuesdays — tell us the date and the servings, and we will handle the rest. Please order at least 48 hours ahead.</p>
+        <p class="order-phone">+1 (929) 555-0118</p>
+      </div>
+      <form class="order-form reveal" id="orderForm" novalidate>
+        <div class="field">
+          <label for="oName">Name</label>
+          <input type="text" id="oName" name="name" placeholder="Jane Appleseed" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="oDate">Date needed</label>
+            <input type="date" id="oDate" name="date" required />
+          </div>
+          <div class="field">
+            <label for="oServings">Servings</label>
+            <select id="oServings" name="servings" required>
+              <option value="6–8">6–8 servings</option>
+              <option value="10–12" selected>10–12 servings</option>
+              <option value="15–20">15–20 servings</option>
+              <option value="25+">25+ servings</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="oPhone">Phone</label>
+          <input type="tel" id="oPhone" name="phone" placeholder="+1 (___) ___-____" required />
+        </div>
+        <div class="field">
+          <label for="oNotes">Wishes <span class="opt">(optional)</span></label>
+          <textarea id="oNotes" name="notes" rows="3" placeholder="Flavors, inscription, occasion…"></textarea>
+        </div>
+        <p class="form-error" id="formError"></p>
+        <button type="submit" class="btn btn-full">Request cake order</button>
+        <div class="form-success" id="formSuccess" hidden>
+          <p><strong>Thank you!</strong> Your request has been received — we will call you back shortly to confirm.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="logo">Papa Le</p>
+        <p class="footer-sub">Artisan Pâtisserie</p>
+      </div>
+      <div>
+        <p class="footer-title">Visit</p>
+        <p>132 E 7th St<br />New York, NY 10009</p>
+      </div>
+      <div>
+        <p class="footer-title">Hours</p>
+        <p>Tue – Sun<br />8:00 AM – 8:00 PM</p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>+1 (929) 555-0118<br />hello@papale.nyc</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Papa Le · Portfolio demo project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
